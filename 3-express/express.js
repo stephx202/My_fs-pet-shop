@@ -1,10 +1,10 @@
 // set up the server/dependencies
-// const express = require('express');
-// const app = express();
-// const fs = require('fs');
-import express from 'express';
-import fs from 'fs';
+const express = require('express');
 const app = express();
+const fs = require('fs');
+// import express from 'express';
+// import fs from 'fs';
+// const app = express();
 // make a variable of data array
 // let dataArray  
 // const index = Number(req.url.slice(req.url.lastIndexOf('/') + 1))  => localhost:800/pets/0
