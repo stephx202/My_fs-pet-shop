@@ -5,7 +5,11 @@ const fs = require('fs');
 // import express from 'express';
 // import fs from 'fs';
 // const app = express();
-fs.readFile('../pets.json', 'utf-8', (error, data)  => {
+//let something = fs.readfile
+//let {readFile, writeFile} = fs
+//import {readFile, writeFile} from 'fs'   !!!!!!
+//import 
+readFile('../pets.json', 'utf-8', (error, data)  => {
     if(error){
         console.error("error, cant read pet data")
         return;
@@ -24,10 +28,10 @@ fs.readFile('../pets.json', 'utf-8', (error, data)  => {
         console.log("it works")
     });
 
-    app.get('/pets/0', function (req, res) { // this is handling an if statement for method and url, somehow...
-        res.send(dataparsed[0] /* some path?? here */);
-        console.log("we reached to pets/0")
-    });
+    // app.get('/pets/0', function (req, res) { // this is handling an if statement for method and url, somehow...
+    //     res.send(dataparsed[0] /* some path?? here */);
+    //     console.log("we reached to pets/0")
+    // });
     app.get('/pets/:num', function (req, res, next) { // this is handling an if statement for method and url, somehow...
         const { num } = req.params // whatever is after the key in ???
         //console.log(req.params);
